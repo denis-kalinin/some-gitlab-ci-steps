@@ -1,0 +1,8 @@
+spec: {}
+---
+exec:
+  command:
+    - bash
+    - -c
+    - ~/.volta/bin/npm ci || ~/.volta/bin/npm i
+

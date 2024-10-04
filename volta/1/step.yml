@@ -1,0 +1,7 @@
+spec: {}
+---
+exec:
+  command:
+    - bash
+    - -c
+    - uname -a

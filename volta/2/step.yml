@@ -1,0 +1,8 @@
+spec: {}
+---
+exec:
+  command: 
+    - bash
+    - -c
+    - curl https://get.volta.sh | bash
+

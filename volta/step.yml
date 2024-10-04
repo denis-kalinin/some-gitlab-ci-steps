@@ -1,0 +1,12 @@
+spec: {}
+---
+steps:
+  - name: Print Linux name (uname)
+    step: ./1
+  - name: Get Volta
+    step: ./2
+  - name: Print Node version
+    step: ./3
+  #- name: Npm install
+  #  step: ./4
+
