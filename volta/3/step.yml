@@ -1,9 +1,9 @@
 spec:
   outputs:
-    result: {}
+    node: {}
 ---
 exec:
   command:
     - bash
     - -c
-    - echo '{"result":"$(echo ~/.volta/bin/node)"}'
+    - echor node=$(echo ~/.volta/bin/node) | tee ${{ output_file }}
