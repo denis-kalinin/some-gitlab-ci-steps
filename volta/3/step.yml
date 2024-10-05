@@ -6,4 +6,4 @@ exec:
   command:
     - bash
     - -c
-    - echo result=$(echo ~/.volta/bin/node)
+    - echo '{"result":"$(echo ~/.volta/bin/node)"}'
