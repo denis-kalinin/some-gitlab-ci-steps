@@ -1,7 +1,12 @@
-spec: {}
+spec:
+  inputs:
+    volta_sh_url:
+      type: string
+      default: https://get.volta.sh
 ---
 exec:
-  command:
+  command: 
     - bash
     - -c
-    - uname -a
+    - curl ${{ inputs.volta_sh_url }} | bash
+

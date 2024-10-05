@@ -1,12 +1,20 @@
-spec: {}
+spec:
+  inputs:
+    volta_sh_url:
+      type: string
+      default: https://get.volta.sh
+  outputs:
+    node: {}
 ---
 steps:
-  - name: Print Linux name (uname)
-    step: ./volta/1
   - name: Get Volta
+    step: ./volta/1
+    inputs:
+      volta_sh_url: ${{ inputs.volta_sh_url }}
+  - name: Intall Node version
     step: ./volta/2
-  - name: Print Node version
-    step: ./volta/3
-  #- name: Npm install
-  #  step: ./4
+  - name: node_path
+    step: ./volta/2
+outputs:
+  node: ${{ steps.node_path.outputs.result }}
 

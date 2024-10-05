@@ -1,8 +1,19 @@
-spec: {}
+spec:
+  outputs:
+    node:
+      type: string
+    npm:
+      type: string
 ---
 exec:
-  command: 
+  command:
     - bash
     - -c
-    - curl https://get.volta.sh | bash
-
+    - ~/.volta/bin/node -v || (/.volta/bin/volta install node && ~/.volta/bin/node -v)
+  outputs:
+    node:
+      file: echo node=$(echo ~/.volta/bin/node)
+      version: ~/.volta/bin/node -v
+    npm:
+      file: realpath ~/.volta/bin/npm
+      version: ~/.volta/bin/npm -v
