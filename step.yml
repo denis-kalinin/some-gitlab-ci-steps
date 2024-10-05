@@ -3,6 +3,7 @@ spec:
     volta_sh_url:
       type: string
       default: https://get.volta.sh
+      description: Volta install script URL (optional)
   outputs:
     result: {}
 ---
@@ -16,5 +17,5 @@ steps:
   - name: node_path
     step: ./volta/3
 outputs:
-  result: "rootbinvolta"
+  result: ${{ steps.node_path.ouputs.node }}
 

@@ -2,7 +2,6 @@ spec:
   inputs:
     volta_sh_url:
       type: string
-      description: The URL to get Volta scipt, e.g. https://get.volta.sh (Optional)
       default: https://get.volta.sh
 ---
 exec:
