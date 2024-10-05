@@ -6,4 +6,4 @@ exec:
   command:
     - bash
     - -c
-    - echo node=$(echo ~/.volta/bin/node) | tee ${{ output_file }}
+    - echo "Output file ${{ output_file }}" && (echo node=$(echo ~/.volta/bin/node) | tee ${{ output_file }})
