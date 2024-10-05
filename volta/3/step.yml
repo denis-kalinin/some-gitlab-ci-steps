@@ -1,6 +1,7 @@
 spec:
   outputs:
-    node: {}
+    node:
+      type: string
 ---
 exec:
   command:
