@@ -1,6 +1,6 @@
 spec:
   outputs:
-    node: {}
+    result: {}
 ---
 exec:
   command:
