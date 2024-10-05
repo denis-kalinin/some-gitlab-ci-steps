@@ -6,4 +6,4 @@ exec:
   command:
     - bash
     - -c
-    - echo "Output file ${{ output_file }}" && (echo node=SOMETHING | tee ${{ output_file }}) && (echo "Ouput file content" && cat ${{ output_file }})
+    - echo "Output file ${{ output_file }}" && (echo node=SOMETHING | tee ${{ output_file }}) && (echo "Ouput file content de nuevo" && cat ${{ output_file }})

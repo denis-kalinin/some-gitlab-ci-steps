@@ -4,8 +4,7 @@ spec:
       type: string
       default: https://get.volta.sh
   outputs:
-    result:
-      type: string
+    result: {}
 ---
 steps:
   - name: Get Volta
