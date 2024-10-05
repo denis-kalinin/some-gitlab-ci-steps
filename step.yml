@@ -16,5 +16,5 @@ steps:
   - name: node_path
     step: ./volta/3
 outputs:
-  result: "${{ steps.node_path.outputs.node }}"
+  result: "rootbinvolta"
 
