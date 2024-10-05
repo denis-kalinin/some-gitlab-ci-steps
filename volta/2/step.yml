@@ -1,8 +1,0 @@
-spec: {}
----
-exec:
-  command:
-    - bash
-    - -c
-    - ~/.volta/bin/node -v || /.volta/bin/volta install node
-
